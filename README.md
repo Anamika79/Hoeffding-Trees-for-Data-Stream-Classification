@@ -31,20 +31,21 @@ The experiments use the Kaggle Credit Card Fraud Detection dataset to simulate a
 Credit Card Fraud Detection Dataset
 
 Source: [Kaggle – Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+
 The dataset contains anonymised credit card transactions made by European cardholders.
 
 ## ⚙️ Methodology
 
 The project follows a stream-based evaluation approach:
 
-1.**Data loading**: Load the Kaggle dataset and inspect its structure.
-2.**Preprocessing**: Sort transactions by time and separate features from target labels.
-3.**Initial training**: Use an initial portion of the data to initialise the models.
-4.**Stream simulation**: Feed the remaining transactions one at a time.
-5.**Prequential evaluation**: Predict the class of each transaction before updating the model with its actual label.
-6.**Performance evaluation**: Compare the algorithms using classification metrics.
-7.**Concept drift experiment**: Generate a synthetic stream with a controlled change in the relationship between features and labels.
-8.**Comparison**: Analyse how traditional and adaptive models respond to incoming data and concept drift.
+1. **Data loading**: Load the Kaggle dataset and inspect its structure.
+2. **Preprocessing**: Sort transactions by time and separate features from target labels.
+3. **Initial training**: Use an initial portion of the data to initialise the models.
+4. **Stream simulation**: Feed the remaining transactions one at a time.
+5. **Prequential evaluation**: Predict the class of each transaction before updating the model with its actual label.
+6. **Performance evaluation**: Compare the algorithms using classification metrics.
+7. **Concept drift experiment**: Generate a synthetic stream with a controlled change in the relationship between features and labels.
+8. **Comparison**: Analyse how traditional and adaptive models respond to incoming data and concept drift.
 
 ## 📈 Evaluation Metrics
 
